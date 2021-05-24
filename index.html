@@ -140,22 +140,33 @@
 </code></pre></div></div>
 <h2 id="guide-to-installing">Installing:</h3>
 <h3 id="installing">To install pi-ware, run the command below:</h2>
-  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">wget -qO- https://rb.gy/sj8bi9 | bash</span>
+  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">git clone https://github.com/zachthecoder14/pi-ware.git
+$HOME/pi-ware/install</span>
 </code></pre></div></div>
   <div class="tooltip">
   <button class="button2" onclick="copyToClipboard('#p1')" onmouseout="outFunc()"><span class="tooltiptext" id="CopyTooltip1">Copy to clipboard</span>Copy Code</button>
 </div>
-<h2 id="uninstalling">Uninstalling:</h2>
-<h3 id="guide-to-uninstalling">To uninstall pi-ware, run the command below:</h3>
-  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">$HOME/.local/share/pi-ware/uninstall
-</span>
+<h2 id="updating">Updating:</h2>
+<h3 id="guide-to-uninstalling">To update pi-ware, run the command below:</h3>
+  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">$HOME/pi-ware/updater</span>
 </code></pre></div></div>
   <div class="tooltip">
   <button class="button2" onclick="copyToClipboard('#p2')" onmouseout="outFunc()"><span class="tooltiptext" id="CopyTooltip2">Copy to clipboard</span>Copy Code</button>
 </div>
+<h2 id="uninstalling">Uninstalling:</h2>
+<h3 id="guide-to-uninstalling">To uninstall pi-ware, run the command below:</h3>
+  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">$HOME/.local/share/pi-ware/uninstall</span>
+</code></pre></div></div>
+  <div class="tooltip">
+  <button class="button2" onclick="copyToClipboard('#p3')" onmouseout="outFunc()"><span class="tooltiptext" id="CopyTooltip2">Copy to clipboard</span>Copy Code</button>
+</div>
 
-<p style="display: none;" id="p1">wget -qO- https://rb.gy/sj8bi9 | bash</p>
-<p style="display: none;" id="p2">$HOME/.local/share/pi-ware/uninstall
+<p style="display: none;" id="p1">git clone https://github.com/zachthecoder14/pi-ware.git
+$HOME/pi-ware/install
+</p>
+<p style="display: none;" id="p2">$HOME/pi-ware/updater
+</p>
+<p style="display: none;" id="p3">$HOME/pi-ware/uninstall
 </p>
 <!-- Script for copy button -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -168,8 +179,10 @@ function copyToClipboard(element) {
   $temp.remove();
   var tooltip1 = document.getElementById("CopyTooltip1");
   var tooltip2 = document.getElementById("CopyTooltip2");
+  var tooltip3 = document.getElementById("CopyTooltip3");
   tooltip1.innerHTML = "Copied!";
   tooltip2.innerHTML = "Copied!";
+  tooltip3.innerHTML = "Copied!";
 }
 
 function Copy(id) {
@@ -188,14 +201,23 @@ function Copy(id) {
     document.execCommand("copy");
     var tooltip = document.getElementById("CopyTooltip2");
     tooltip.innerHTML = "Copied!";
+  } else if (id == "2") {
+    var copyText3 = document.getElementById("CopyText3");
+    copyText3.select();
+    copyText3.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+    var tooltip = document.getElementById("CopyTooltip3");
+    tooltip.innerHTML = "Copied!";
   }
 }
 
 function outFunc() {
   var tooltip1 = document.getElementById("CopyTooltip1");
   var tooltip2 = document.getElementById("CopyTooltip2");
+  var tooltip3 = document.getElementById("CopyTooltip3");
   tooltip1.innerHTML = "Copy to clipboard";
   tooltip2.innerHTML = "Copy to clipboard";
+  tooltip3.innerHTML = "Copy to clipboard";
 }
 </script>
 <!--<h2 id="reviews">Reviews</h2>-->
