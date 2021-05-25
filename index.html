@@ -6,100 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <!-- CSS style -->
-    <style>
-      .center {
-        text-align: center;
-      }
-      .hidden {
-	display: none;
-      }
-      .tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 140px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px;
-  position: absolute;
-  z-index: 1;
-  bottom: 150%;
-  left: 50%;
-  margin-left: -75px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
-}
-.parent {
-  display: flex;
-  height: 300px; /* Or whatever */
-}
-
-.child {
-  width: 100px;  /* Or whatever */
-  height: 100px; /* Or whatever */
-  margin: auto;  /* Magic! */
-}
-.flex-container {
-  /* We first create a flex layout context */
-  display: flex;
-
-  /* Then we define the flow direction 
-     and if we allow the items to wrap 
-   * Remember this is the same as:
-   * flex-direction: row;
-   * flex-wrap: wrap;
-   */
-  flex-flow: row wrap;
-
-  /* Then we define how is distributed the remaining space */
-  justify-content: space-around;
-}
-
-.button2 {
-  background-color: royalblue; /* blue */
-  border: none;
-  border-radius: 8px;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-}
-
-.button2:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-    </style>
     <link rel="stylesheet" href="https://itai-nelken.github.io/aptpac/assets/css/style.css?v=653fdb393fe2b8d641b0cee23c86bc9c9a54893d">
     <link rel="stylesheet" href="https://oxmc.github.io/Astrobuild2/css/style/loading.css" type="text/css">
+    <link rel="stylesheet" href="https://oxmc.github.io/pi-ware/css/style.css" type="text/css">
     <!-- Begin Jekyll SEO tag v2.7.1 -->
     <title>Pi-Ware</title>
     <meta name="generator" content="Jekyll v3.9.0" />
@@ -133,6 +42,8 @@
       <h1 class="project-name">Pi-Ware</h1>
       <h2 class="project-tagline">Pi-Ware is an app store for the Raspberry Pi that allows you to install apps that you can't get using sudo apt-get install in Terminal.</h2>
       <button onclick="window.location.assign('https://github.com/zachthecoder14/pi-ware')" class="btn">View on GitHub</button>
+      <span class="center site-footer-owner">Looking for the pi-ware applist?</span>
+      <button onclick="window.location.assign('https://oxmc.github.io/pi-ware/apps/current/')" class="btn">click here</button>
     </section>
     <section class="main-content">
       <h1 class="center project-name" id="pi-ware">pi-ware</h1>
